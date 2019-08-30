@@ -21,8 +21,8 @@ function BubbleSort(array $arr)
         for ($j = $i + 1; $j < $count; $j++) {
 
             //比较数组中相邻两个值的大小
-            if ($arr[$i] < $arr[$j]) {      //从小到大，换成 >
-                $temp    = $arr[$i];
+            if ($arr[$i] < $arr[$j]) {      //从小到大排序，此处换成 >
+                $temp    = $arr[$i];        //临时变量
                 $arr[$i] = $arr[$j];        //第一次更换位置
                 $arr[$j] = $temp;           //完成位置互换
             }
