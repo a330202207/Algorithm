@@ -30,9 +30,9 @@ function SelectSort(array $arr)
         }
 
         if ($min != $i) {
-            $temp       = $arr[$min];       //临时变量
-            $arr[$min]  = $arr[$i];         //最小元素替换成当前元素
-            $arr[$i]    = $temp;            //当前元素替换成最小元素
+            $temp      = $arr[$min];       //临时变量
+            $arr[$min] = $arr[$i];         //最小元素替换成当前元素
+            $arr[$i]   = $temp;            //当前元素替换成最小元素
         }
     }
     return $arr;
